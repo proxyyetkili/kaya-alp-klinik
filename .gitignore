@@ -1,0 +1,6 @@
+# OS and local-only files
+.DS_Store
+Thumbs.db
+
+# Image-generation intermediate; the final transparent hero asset is hero-molar.png
+assets/images/hero-molar-chroma.png
