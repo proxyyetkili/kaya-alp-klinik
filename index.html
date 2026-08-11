@@ -1,261 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği</title>
-    <meta name="description" content="Kaya Alp Ağız ve Diş Sağlığı Polikliniği ile sağlıklı ve estetik gülüşlere kavuşun. Tekirdağ Süleymanpaşa'da uzman kadro.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği — çağdaş teknoloji, etik yaklaşım ve kişiye özel diş hekimliği.">
+    <meta name="theme-color" content="#2e3f71">
+    <title>Kaya Alp Ağız ve Diş Sağlığı Polikliniği</title>
     <link rel="icon" href="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="ssstyle.css?v=20260802-hero-tooth-v5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="ssstyle.css?v=20260811-kayaalp-v1">
 </head>
 <body>
+    <a class="skip-link" href="#content">Ana içeriğe geç</a>
 
-    <div id="loader" class="loader">
-        <img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp Yükleniyor" class="loader-logo">
-        <div class="loader-progress"></div>
+    <div class="utility-bar">
+        <div class="shell utility-inner">
+            <p><i class="fa-regular fa-clock"></i> Pazartesi – Cumartesi: 09.00 – 19.00</p>
+            <div>
+                <a href="tel:+902824400287"><i class="fa-solid fa-phone"></i> (0282) 440 02 87</a>
+                <a href="#contact"><i class="fa-regular fa-envelope"></i> Bize yazın</a>
+            </div>
+        </div>
     </div>
 
-    <header id="header" class="header">
-        <div class="container nav-wrapper">
-            <a href="#" class="logo">
-                <img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp Logo">
+    <header class="site-header" id="siteHeader">
+        <div class="shell header-inner">
+            <a class="brand" href="#home" aria-label="Kaya Alp Ana Sayfa">
+                <img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği">
             </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero">Anasayfa</a></li>
-                <li><a href="#services">Tedavilerimiz</a></li>
-                <li><a href="#about">Hakkımızda</a></li>
-                <li><a href="#appointment" class="btn-primary">Randevu Al</a></li>
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <i class="fa-solid fa-bars"></i>
+
+            <nav class="desktop-nav" aria-label="Ana navigasyon">
+                <a class="active" href="#home">Anasayfa</a>
+                <div class="nav-dropdown">
+                    <button type="button" aria-expanded="false">Kurumsal <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown-panel">
+                        <a href="#about">Hakkımızda <span>↗</span></a>
+                        <a href="#why-us">Kalite yaklaşımımız <span>↗</span></a>
+                        <a href="#doctors">Hekimlerimiz <span>↗</span></a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button type="button" aria-expanded="false">Tedavilerimiz <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown-panel dropdown-panel--wide">
+                        <a href="#treatments">İmplant tedavileri <span>↗</span></a>
+                        <a href="#treatments">Estetik diş hekimliği <span>↗</span></a>
+                        <a href="#treatments">Ortodonti <span>↗</span></a>
+                        <a href="#treatments">Koruyucu diş hekimliği <span>↗</span></a>
+                    </div>
+                </div>
+                <a href="#doctors">Hekimlerimiz</a>
+                <a href="#journal">Sağlık Rehberi</a>
+                <a href="#contact">İletişim</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="header-phone" href="tel:+902824400287" aria-label="Bizi arayın"><i class="fa-solid fa-phone"></i></a>
+                <a class="button button--header" href="#appointment">Randevu Talebi <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button class="menu-button" id="menuButton" aria-label="Menüyü aç" aria-controls="mobileMenu" aria-expanded="false"><span></span><span></span></button>
             </div>
         </div>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-bg-glow"></div>
-        <div class="container hero-container">
-            <div class="hero-content fade-up">
-                <div class="badge">Modern & Güvenilir Diş Hekimliği</div>
-                <h1>Gülüşünüzdeki <br><span class="text-gradient">Işıltıyı</span> Keşfedin.</h1>
-                <p>Tekirdağ Süleymanpaşa'da, uzman hekim kadromuz ve en yeni dijital diş hekimliği teknolojileriyle sağlığınızı ve estetiğinizi baştan yaratıyoruz.</p>
-                <div class="hero-buttons">
-                    <a href="#appointment" class="btn-primary btn-lg">Ücretsiz Randevu <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="tel:+902824400287" class="btn-outline btn-lg"><i class="fa-solid fa-phone"></i> (0282) 440 02 87</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-num">10+</span>
-                        <span class="stat-text">Yıllık Tecrübe</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">5000+</span>
-                        <span class="stat-text">Mutlu Hasta</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="tooth-showcase">
-                    <svg viewBox="0 0 200 200" class="rotating-text-svg">
-                        <path id="circlePath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
-                        <text>
-                            <textPath href="#circlePath">ÖZEL KAYA ALP AĞIZ VE DİŞ SAĞLIĞI POLİKLİNİĞİ • MÜKEMMEL GÜLÜŞLER • </textPath>
-                        </text>
-                    </svg>
-                    <div class="tooth-wrapper" id="tooth-wrapper" aria-label="İmplantın diş formuna dönüşüm animasyonu">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3035/3035118.png" alt="3D Diş" id="3d-tooth" class="tooth-img">
-                    </div>
-                    <div class="floating-bubble b1"><i class="fa-solid fa-tooth"></i> Dijital İmplant</div>
-                    <div class="floating-bubble b2"><i class="fa-regular fa-face-smile"></i> Estetik Gülüş</div>
-                </div>
-            </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__top">
+            <img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp">
+            <button type="button" id="menuClose" aria-label="Menüyü kapat"><i class="fa-solid fa-xmark"></i></button>
         </div>
-    </section>
+        <nav aria-label="Mobil navigasyon">
+            <a href="#home">Anasayfa</a>
+            <a href="#about">Kurumsal</a>
+            <a href="#treatments">Tedavilerimiz</a>
+            <a href="#doctors">Hekimlerimiz</a>
+            <a href="#journal">Sağlık Rehberi</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+        <div class="mobile-menu__bottom"><a href="tel:+902824400287">(0282) 440 02 87</a><a class="button" href="#appointment">Randevu Talebi</a></div>
+    </div>
 
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-title fade-up">
-                <span class="subtitle">Hizmetlerimiz</span>
-                <h2>Size Özel <span class="text-gradient">Tedavi Yöntemleri</span></h2>
-            </div>
-            
-            <div class="service-grid">
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-tooth"></i></div>
-                    <h3>Dental İmplant</h3>
-                    <p>Eksik dişlerinizi doğal diş hissiyatı veren, uzun ömürlü titanyum implantlarla tamamlıyoruz.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                    <h3>Estetik Gülüş Tasarımı</h3>
-                    <p>Yüz hatlarınıza en uygun altın orana sahip gülüşü dijital ortamda tasarlıyoruz.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-brands fa-creative-commons-by"></i></div>
-                    <h3>Zirkonyum Kaplama</h3>
-                    <p>Metalsiz, ışık geçirgenliği yüksek ve tamamen doğal görünümlü zirkonyum porselenler.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-teeth"></i></div>
-                    <h3>Ortodonti</h3>
-                    <p>Çapraşık dişlerinizi şeffaf plaklar veya estetik braketlerle ideal dizilime kavuşturuyoruz.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-shield-virus"></i></div>
-                    <h3>Kanal Tedavisi</h3>
-                    <p>Enfekte olmuş dişlerinizi ağrısız ve konforlu mikroskobik kanal tedavisi ile kurtarıyoruz.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-child"></i></div>
-                    <h3>Pedodonti</h3>
-                    <p>Çocuklarınızın diş hekimi korkusunu yenmesini sağlayan, neşeli ve koruyucu tedaviler.</p>
-                    <a href="#contact" class="card-link">İncele <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container about-wrapper">
-            <div class="about-images fade-up">
-                <div class="image-box main-box">
-                    <div class="overlay-gradient"></div>
-                </div>
-                <div class="experience-card">
-                    <i class="fa-solid fa-award"></i>
-                    <h4>Premium</h4>
-                    <span>Sağlık Hizmeti</span>
-                </div>
-            </div>
-            <div class="about-text fade-up">
-                <span class="subtitle">Neden Biz?</span>
-                <h2>Tekirdağ'ın Referans <br><span class="text-gradient">Ağız ve Diş Sağlığı Merkezi</span></h2>
-                <p>Kaya Alp Ağız ve Diş Sağlığı Polikliniği olarak, sterilizasyon kurallarından asla taviz vermeden, hasta konforunu merkeze alan bir anlayışla hizmet veriyoruz. Gelişmiş teknolojik altyapımızla süreçlerinizi şeffaf ve hızlı şekilde planlıyoruz.</p>
-                <ul class="feature-list">
-                    <li><i class="fa-solid fa-circle-check"></i> %100 Steril ve Güvenli Ortam</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Dijital Panoramik Görüntüleme</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Alanında Uzman Hekim Kadrosu</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Ağrısız, Acısız Konforlu Tedavi</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="appointment" class="appointment-section">
-        <div class="container appointment-shell">
-            <div class="appointment-intro fade-up"><span class="subtitle">Online randevu</span><h2>Gülüşünüz için<br><span class="text-gradient">iyi bir zaman seçin.</span></h2><p>Üç kısa adımda doktorunuzu, tarihi ve saati seçin. Talebiniz klinik tarafından onaylandıktan sonra kesinleşir.</p><div class="appointment-points"><span><i class="fa-solid fa-shield-heart"></i> KVKK uyumlu</span><span><i class="fa-regular fa-clock"></i> 2 dakikada tamamla</span></div></div>
-            <div class="booking-card fade-up" data-booking><div class="booking-progress"><span class="progress-step active" data-progress="1">01</span><i></i><span class="progress-step" data-progress="2">02</span><i></i><span class="progress-step" data-progress="3">03</span><b><span data-current-step>1</span> / 3</b></div><form id="booking-form" action="api/appointments/create.php" method="post"><fieldset class="booking-step active" data-booking-step="1"><legend>Hangi konuda yardımcı olalım?</legend><p>Tedavinizi seçerek başlayalım.</p><div class="booking-choices"><label><input type="radio" name="treatment" value="implant" required><span><i class="fa-solid fa-tooth"></i> Dental implant <b>↗</b></span></label><label><input type="radio" name="treatment" value="smile-design"><span><i class="fa-regular fa-face-smile-beam"></i> Gülüş tasarımı <b>↗</b></span></label><label><input type="radio" name="treatment" value="aligner"><span><i class="fa-solid fa-teeth"></i> Şeffaf plak <b>↗</b></span></label><label><input type="radio" name="treatment" value="check-up"><span><i class="fa-solid fa-stethoscope"></i> Genel muayene <b>↗</b></span></label></div><button type="button" class="btn-primary booking-next">Devam et <i class="fa-solid fa-arrow-right"></i></button></fieldset><fieldset class="booking-step" data-booking-step="2"><legend>Size uygun doktoru seçin.</legend><p>Üç uzman hekimimizden biriyle görüşün.</p><div class="doctor-choices"><label><input type="radio" name="doctor" value="dr-ecem-kaya" required><span><b>Dr. Ecem Kaya</b><small>Estetik diş hekimliği</small><em>EK</em></span></label><label><input type="radio" name="doctor" value="dr-mert-alp"><span><b>Dr. Mert Alp</b><small>İmplantoloji &amp; cerrahi</small><em>MA</em></span></label><label><input type="radio" name="doctor" value="dr-selin-arda"><span><b>Dr. Selin Arda</b><small>Ortodonti &amp; pedodonti</small><em>SA</em></span></label></div><div class="booking-actions"><button type="button" class="booking-back">← Geri</button><button type="button" class="btn-primary booking-next">Tarih ve saat seç <i class="fa-solid fa-arrow-right"></i></button></div></fieldset><fieldset class="booking-step" data-booking-step="3"><legend>Takvimden zamanınızı seçin.</legend><p>Size uygun günü ve saati işaretleyin.</p><div class="calendar-toolbar"><button type="button" class="calendar-nav" data-calendar-prev>‹</button><strong data-calendar-title>Takvim</strong><button type="button" class="calendar-nav" data-calendar-next>›</button></div><div class="calendar-grid" data-calendar-grid></div><div class="time-heading">Uygun saatler <span data-picked-date>Tarih seçin</span></div><div class="time-choices"><label><input type="radio" name="appointment_time" value="09:30" required><span>09:30</span></label><label><input type="radio" name="appointment_time" value="11:00"><span>11:00</span></label><label><input type="radio" name="appointment_time" value="14:30"><span>14:30</span></label><label><input type="radio" name="appointment_time" value="16:30"><span>16:30</span></label></div><div class="patient-fields"><input name="patient_name" type="text" placeholder="Adınız soyadınız" required><input name="patient_phone" type="tel" placeholder="Telefon numaranız" required></div><input type="hidden" name="appointment_date" data-selected-date><input type="hidden" name="status" value="pending"><div class="booking-actions"><button type="button" class="booking-back">← Geri</button><button type="submit" class="btn-primary">Randevu talep et <i class="fa-solid fa-paper-plane"></i></button></div></fieldset><p class="booking-feedback" role="status"></p></form></div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container contact-container">
-            <div class="contact-info fade-up">
-                <h2>İletişime Geçin</h2>
-                <p>Sağlıklı gülüşleriniz için ilk adımı atın. Bize hemen ulaşın.</p>
-                
-                <div class="info-cards">
-                    <div class="info-card">
-                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <h4>Klinik Adresi</h4>
-                            <p>Cumhuriyet, Kazım Koyuncu Sk. No: 4/a, 59020 Süleymanpaşa/Tekirdağ</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                        <div>
-                            <h4>Telefon</h4>
-                            <p>(0282) 440 02 87</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="icon"><i class="fa-solid fa-clock"></i></div>
-                        <div>
-                            <h4>Çalışma Saatleri</h4>
-                            <p>Pzt - Cts: 08:00 – 19:00 (Cts: 18:00)<br>Pazar: Kapalı</p>
-                        </div>
+    <main id="content">
+        <section class="hero" id="home">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="shell hero-inner">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow eyebrow--light"><span></span> KAYA ALP AĞIZ VE DİŞ SAĞLIĞI</p>
+                    <h1>Gülüşünüze iyi gelen, <em>size özel</em> bir yaklaşım.</h1>
+                    <p class="hero-lead">Modern klinik altyapımız ve uzman hekim kadromuzla ağız ve diş sağlığınızı özenle, bütüncül bir perspektifle takip ediyoruz.</p>
+                    <div class="hero-buttons">
+                        <a class="button button--white" href="#appointment">Randevu Talebi Oluştur <i class="fa-solid fa-arrow-right"></i></a>
+                        <a class="text-action" href="#treatments">Tedavilerimizi keşfedin <i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                 </div>
+                <div class="hero-art" aria-label="Kaya Alp klinik deneyimi" data-reveal>
+                    <div class="hero-art__ring"></div>
+                    <div class="hero-art__card hero-art__card--top"><i class="fa-solid fa-shield-heart"></i><span>Güvenli klinik<br>deneyimi</span></div>
+                    <img class="hero-tooth" src="assets/images/hero-molar.png" alt="Sağlıklı diş görselleştirmesi">
+                    <div class="hero-art__card hero-art__card--bottom"><strong>10+</strong><span>yıllık güven<br>ve deneyim</span></div>
+                </div>
             </div>
-            
-            <div class="contact-form-wrapper fade-up">
-                <form class="contact-form">
-                    <h3>Online Randevu Talebi</h3>
-                    <div class="input-row">
-                        <input type="text" placeholder="Adınız Soyadınız" required>
-                        <input type="tel" placeholder="Telefon Numaranız" required>
-                    </div>
-                    <select required>
-                        <option value="" disabled selected>Tedavi Seçiniz</option>
-                        <option value="implant">İmplant</option>
-                        <option value="estetik">Estetik Gülüş Tasarımı</option>
-                        <option value="ortodonti">Ortodonti</option>
-                        <option value="diger">Diğer / Muayene</option>
-                    </select>
-                    <textarea rows="4" placeholder="Mesajınız (Opsiyonel)"></textarea>
-                    <button type="submit" class="btn-primary btn-block">Talebi Gönder <i class="fa-solid fa-paper-plane"></i></button>
+            <div class="hero-footer shell"><span>Özenle tasarlanmış her detay, sağlıklı bir gülüş için.</span><a href="#about"><i class="fa-solid fa-arrow-down"></i> Kliniğimizi tanıyın</a></div>
+        </section>
+
+        <section class="trust-strip" aria-label="Klinik özellikleri">
+            <div class="shell trust-grid">
+                <p><i class="fa-solid fa-sparkles"></i><span><b>Dijital teknoloji</b> Hassas tanı, şeffaf planlama</span></p>
+                <p><i class="fa-solid fa-user-doctor"></i><span><b>Uzman kadro</b> Multidisipliner yaklaşım</span></p>
+                <p><i class="fa-solid fa-heart-pulse"></i><span><b>Hasta odaklılık</b> Konforlu tedavi deneyimi</span></p>
+            </div>
+        </section>
+
+        <section class="section intro-section" id="about">
+            <div class="shell split-intro">
+                <div data-reveal><p class="eyebrow">KURUMSAL YAKLAŞIM</p><h2>Bilimsel doğrulukla, insani bir bağ kuruyoruz.</h2></div>
+                <div class="intro-body" data-reveal><p>Her ziyaretin kendine özgü olduğunu biliyoruz. Kaya Alp’te planlama; ihtiyaçlarınızı dinleyerek, klinik verileri dikkatle değerlendirerek ve tüm süreci anlaşılır kılarak başlar.</p><a class="underlined-link" href="#why-us">Kaya Alp farkını keşfedin <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+        </section>
+
+        <section class="section treatments" id="treatments">
+            <div class="shell">
+                <div class="section-heading"><div><p class="eyebrow">TEDAVİ ALANLARIMIZ</p><h2>İyi hissettiren<br><em>diş hekimliği.</em></h2></div><p>Güncel tedavi yöntemlerini, sizi merkeze alan bir iletişimle bir araya getiriyoruz.</p></div>
+                <div class="treatment-grid">
+                    <article class="treatment-card treatment-card--featured" data-reveal><span class="card-number">01</span><i class="fa-solid fa-tooth"></i><h3>İmplant Tedavileri</h3><p>Eksik dişlerin fonksiyon ve estetiğini uzun ömürlü çözümlerle yeniden kazandırıyoruz.</p><a href="#appointment">Detaylı bilgi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+                    <article class="treatment-card" data-reveal><span class="card-number">02</span><i class="fa-regular fa-face-smile"></i><h3>Estetik Gülüş Tasarımı</h3><p>Yüzünüze, karakterinize ve beklentilerinize uyumlu doğal gülüşler planlıyoruz.</p><a href="#appointment">Detaylı bilgi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+                    <article class="treatment-card" data-reveal><span class="card-number">03</span><i class="fa-solid fa-align-center"></i><h3>Ortodonti</h3><p>Şeffaf plak ve modern ortodontik yaklaşımlarla dengeli diş dizilimi hedefliyoruz.</p><a href="#appointment">Detaylı bilgi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+                    <article class="treatment-card" data-reveal><span class="card-number">04</span><i class="fa-solid fa-microscope"></i><h3>Endodonti</h3><p>Dişinizi korumaya odaklanan, büyütme destekli hassas kanal tedavileri sunuyoruz.</p><a href="#appointment">Detaylı bilgi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+                    <article class="treatment-card treatment-card--quote" data-reveal><p>“Sağlıklı bir gülüş, iyi bir yaşamın en doğal parçasıdır.”</p><span>KAYA ALP KLİNİK FELSEFESİ</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section why-us" id="why-us">
+            <div class="shell why-layout">
+                <div class="why-visual" data-reveal><div class="why-visual__line"></div><div class="why-visual__circle"><span>ÖZEN</span><span>GÜVEN</span><span>BİLİM</span><span>KONFOR</span></div><p>Her aşamada<br><b>şeffaf iletişim.</b></p></div>
+                <div class="why-content" data-reveal><p class="eyebrow">NEDEN KAYA ALP?</p><h2>Size anlatan, sizi dinleyen ve yanınızda kalan bir ekip.</h2><div class="feature-list"><article><span>01</span><div><h3>Kişiye özel planlama</h3><p>Tedavi kararlarını ihtiyaçlarınıza, klinik durumunuza ve beklentilerinize göre birlikte oluştururuz.</p></div></article><article><span>02</span><div><h3>Güncel klinik altyapı</h3><p>Dijital ölçüden tanı teknolojilerine kadar süreçleri daha öngörülebilir hale getiririz.</p></div></article><article><span>03</span><div><h3>Sakin ve özenli deneyim</h3><p>Her adımı anlaşılır biçimde paylaşır; kendinizi güvende hissetmenizi önemseriz.</p></div></article></div></div>
+            </div>
+        </section>
+
+        <section class="section doctors" id="doctors">
+            <div class="shell"><div class="section-heading section-heading--compact"><div><p class="eyebrow">HEKİMLERİMİZ</p><h2>Uzmanlık, güven ve<br><em>ortak bir vizyon.</em></h2></div><a class="button button--outline" href="#appointment">Ekibimizle tanışın <i class="fa-solid fa-arrow-right"></i></a></div>
+                <div class="doctor-grid"><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--one"><span>EK</span></div><div><p>ESTETİK DİŞ HEKİMLİĞİ</p><h3>Dr. Ecem Kaya</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--two"><span>MA</span></div><div><p>İMPLANTOLOJİ &amp; CERRAHİ</p><h3>Dr. Mert Alp</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--three"><span>SA</span></div><div><p>ORTODONTİ &amp; PEDODONTİ</p><h3>Dr. Selin Arda</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article></div>
+            </div>
+        </section>
+
+        <section class="section journal" id="journal">
+            <div class="shell"><div class="section-heading section-heading--compact"><div><p class="eyebrow">SAĞLIK REHBERİ</p><h2>Gülüşünüze dair<br><em>bilmeniz gerekenler.</em></h2></div><a class="underlined-link" href="#contact">Tüm yazıları görüntüle <i class="fa-solid fa-arrow-right"></i></a></div><div class="journal-grid"><article data-reveal><p>01 / AĞIZ SAĞLIĞI</p><h3>Rutin diş hekimi kontrolleri neden önemlidir?</h3><a href="#contact" aria-label="Yazıyı oku"><i class="fa-solid fa-arrow-right"></i></a></article><article data-reveal><p>02 / ESTETİK</p><h3>Doğal bir gülüş tasarımı nasıl planlanır?</h3><a href="#contact" aria-label="Yazıyı oku"><i class="fa-solid fa-arrow-right"></i></a></article><article data-reveal><p>03 / TEDAVİLER</p><h3>Dijital ölçü ile tedavi deneyimi nasıl değişir?</h3><a href="#contact" aria-label="Yazıyı oku"><i class="fa-solid fa-arrow-right"></i></a></article></div></div>
+        </section>
+
+        <section class="appointment" id="appointment">
+            <div class="shell appointment-layout">
+                <div class="appointment-copy" data-reveal><p class="eyebrow eyebrow--light">RANDEVU TALEBİ</p><h2>Size en uygun zaman için <em>bize yazın.</em></h2><p>Formu tamamladığınızda e-posta uygulamanız açılır ve randevu talebiniz doğrudan kliniğimize iletilir. Ekibimiz en kısa sürede sizinle iletişime geçer.</p><div class="appointment-contact"><a href="tel:+902824400287"><i class="fa-solid fa-phone"></i> (0282) 440 02 87</a><span><i class="fa-regular fa-clock"></i> Pazartesi – Cumartesi / 09.00 – 19.00</span></div></div>
+                <form class="appointment-form" id="appointmentForm" action="mailto:randevu@kayaalpdis.com" method="post" enctype="text/plain" data-mail-recipient="randevu@kayaalpdis.com" data-reveal>
+                    <div class="form-heading"><span>01</span><p>Randevu talebiniz</p></div>
+                    <div class="form-grid"><label>Adınız soyadınız<input name="ad_soyad" autocomplete="name" required></label><label>Telefon numaranız<input name="telefon" type="tel" autocomplete="tel" required></label><label>E-posta adresiniz<input name="email" type="email" autocomplete="email" required></label><label>İlgilendiğiniz alan<select name="tedavi" required><option value="" selected disabled>Seçim yapın</option><option>İmplant tedavileri</option><option>Estetik gülüş tasarımı</option><option>Ortodonti</option><option>Genel muayene</option><option>Diğer</option></select></label><label class="form-full">Notunuz<textarea name="mesaj" rows="3" placeholder="Sizin için uygun gün ve saat aralığını yazabilirsiniz."></textarea></label></div>
+                    <label class="consent"><input type="checkbox" name="kvkk" value="KVKK aydınlatma metnini okudum ve iletişim kurulmasını kabul ediyorum." required><span></span> Kişisel verilerimin randevu talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum.</label>
+                    <button class="button button--white" type="submit">E-posta ile talep gönder <i class="fa-regular fa-paper-plane"></i></button><p class="form-feedback" role="status"></p>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp Logo" class="footer-logo">
-                <p>Modern teknolojiler ve uzman kadromuz ile Süleymanpaşa'nın kalbinde premium diş hekimliği hizmeti sunuyoruz.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>Hızlı Menü</h4>
-                <ul>
-                    <li><a href="#hero">Anasayfa</a></li>
-                    <li><a href="#services">Tedaviler</a></li>
-                    <li><a href="#about">Hakkımızda</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Tedaviler</h4>
-                <ul>
-                    <li><a href="#">Dental İmplant</a></li>
-                    <li><a href="#">Zirkonyum Kaplama</a></li>
-                    <li><a href="#">Ortodonti</a></li>
-                    <li><a href="#">Pedodonti</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği. Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
+        <section class="section contact" id="contact"><div class="shell contact-grid"><div><p class="eyebrow">İLETİŞİM</p><h2>Sizi kliniğimizde<br><em>ağırlamaktan mutluluk duyarız.</em></h2></div><div class="contact-card"><i class="fa-solid fa-location-dot"></i><h3>Kaya Alp Polikliniği</h3><p>Süleymanpaşa, Tekirdağ</p><a href="https://maps.google.com/?q=Süleymanpaşa,Tekirdağ" target="_blank" rel="noopener">Yol tarifi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-card"><i class="fa-solid fa-phone"></i><h3>Randevu ve bilgi</h3><a href="tel:+902824400287">(0282) 440 02 87</a><a href="#appointment">Randevu talebi oluştur <i class="fa-solid fa-arrow-right"></i></a></div></div></section>
+    </main>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
-        }
-      }
-    </script>
-    <script>
-      window.addEventListener('load', function () {
-        window.setTimeout(function () { document.getElementById('loader')?.classList.add('hidden'); }, 1200);
-      });
-    </script>
-    <script type="module" src="sscript.js?v=20260802-hero-tooth-v14"></script>
+    <footer class="site-footer"><div class="shell footer-main"><div><a class="footer-brand" href="#home"><img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp"></a><p>Bilimsel, etik ve insani yaklaşımı bir araya getiren çağdaş diş hekimliği deneyimi.</p></div><div><p>KEŞFET</p><a href="#about">Kurumsal</a><a href="#treatments">Tedavilerimiz</a><a href="#doctors">Hekimlerimiz</a></div><div><p>İLETİŞİM</p><a href="tel:+902824400287">(0282) 440 02 87</a><a href="#appointment">Randevu Talebi</a><a href="#contact">Süleymanpaşa / Tekirdağ</a></div><div class="footer-social"><p>BİZİ TAKİP EDİN</p><a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#contact" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div></div><div class="shell footer-bottom"><span>© 2026 Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span><div><a href="#contact">KVKK</a><a href="#contact">Çerez Politikası</a></div></div></footer>
+
+    <script src="sscript.js?v=20260811-kayaalp-v1" defer></script>
 </body>
 </html>
