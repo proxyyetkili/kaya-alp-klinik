@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const treatmentHref = id => `tedavi.html?tedavi=${encodeURIComponent(id)}`;
     const directLink = (href, label, className = '') => `<a class="${className}" href="${href}"><span>${label}</span></a>`;
-    const treatmentMega = treatmentGroups.map(group => `<section class="mega-group"><a class="mega-group__title" href="tedavilerimiz.html#${group.title.toLocaleLowerCase('tr-TR').replaceAll(' ', '-')}">${group.title}<i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="mega-group__links">${group.items.map(([id, label]) => directLink(treatmentHref(id), label)).join('')}</div></section>`).join('');
+    const treatmentMega = treatmentGroups.map(group => `<section class="mega-group"><a class="mega-group__title" href="tedavilerimiz.html">${group.title}<i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="mega-group__links">${group.items.map(([id, label]) => directLink(treatmentHref(id), label)).join('')}</div></section>`).join('');
     const corporateLinks = [
         ['kurumsal.html', 'Hakkımızda'],
         ['kurumsal-bilgi.html?konu=kariyer', 'Kariyer'],
