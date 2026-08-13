@@ -1,2 +1,36 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DentaPremium Yönetim Girişi</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="admin.css"></head><body class="auth-page"><main class="auth-shell"><a class="admin-brand" href="index.html"><span>✦</span>Denta<span>Premium</span></a><section class="auth-card"><div class="auth-kicker">PRIVATE ACCESS / 01</div><h1>İyi akşamlar,<br><em>ekip.</em></h1><p class="auth-lead">Randevularınızı, hastalarınızı ve günlük operasyonunuzu tek bir sakin ekrandan yönetin.</p><form action="api/auth/login.php" method="post" class="auth-form"><label for="email">Kurumsal e-posta<input id="email" name="email" type="email" autocomplete="username" placeholder="ad@dentapremium.com" required></label><label for="password">Şifre<div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required><button type="button" data-toggle-password aria-label="Şifreyi göster">◉</button></div></label><div class="auth-row"><label class="check"><input type="checkbox" name="remember"><span>Beni hatırla</span></label><a href="mailto:it@dentapremium.com">Şifremi unuttum</a></div><button class="admin-button" type="submit">Panele giriş yap <span>↗</span></button></form><small class="secure-note">⌁ Güvenli bağlantı · KVKK uyumlu yönetim paneli</small></section><p class="auth-footer">© 2026 DentaPremium · <a href="index.html">Siteye dön</a></p></main><script>document.querySelector('[data-toggle-password]').addEventListener('click',e=>{const i=document.getElementById('password');i.type=i.type==='password'?'text':'password';e.currentTarget.textContent=i.type==='password'?'◉':'◌'});</script></body></html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaya Alp | Yönetim Girişi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="admin-brand" href="index.html"><span>KA</span>Kaya Alp</a>
+    <section class="auth-card" aria-labelledby="login-title">
+      <div class="auth-kicker">YÖNETİM ERİŞİMİ</div>
+      <h1 id="login-title">Hoş geldiniz,<br><span>ekip.</span></h1>
+      <p class="auth-lead">Randevu taleplerini, hastaları ve günlük klinik operasyonunu güvenli bir ekrandan yönetin.</p>
+      <form action="api/auth/login.php" method="post" class="auth-form">
+        <label for="email">Kurumsal e-posta<input id="email" name="email" type="email" autocomplete="username" placeholder="ad@kayaalpdis.com" required></label>
+        <label for="password">Şifre<div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required><button type="button" data-toggle-password aria-label="Şifreyi göster">◉</button></div></label>
+        <div class="auth-row"><label class="check"><input type="checkbox" name="remember"><span>Beni hatırla</span></label><a href="mailto:it@kayaalpdis.com">Şifremi unuttum</a></div>
+        <button class="admin-button" type="submit">Panele giriş yap <span>↗</span></button>
+      </form>
+      <small class="secure-note">⌁ Güvenli bağlantı · KVKK uyumlu yönetim paneli</small>
+    </section>
+    <p class="auth-footer">© 2026 Kaya Alp Ağız ve Diş Sağlığı Polikliniği · <a href="index.html">Siteye dön</a></p>
+  </main>
+  <script>
+    document.querySelector('[data-toggle-password]').addEventListener('click', event => {
+      const input = document.getElementById('password');
+      input.type = input.type === 'password' ? 'text' : 'password';
+      event.currentTarget.textContent = input.type === 'password' ? '◉' : '◌';
+    });
+  </script>
+</body>
+</html>
