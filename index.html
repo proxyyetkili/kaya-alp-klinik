@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="ssstylee.css?v=20260811-kayaalp-v1">
+    <link rel="stylesheet" href="ssstylee.css?v=20260818-doctor-v8">
+    <link rel="stylesheet" href="ssstylee.css?v=20260818-doctor-v8">
 </head>
-<body>
+<body class="home-preview">
     <a class="skip-link" href="#content">Ana içeriğe geç</a>
 
     <div class="utility-bar">
@@ -122,26 +123,38 @@
         <section class="section treatments" id="treatments">
             <div class="shell">
                 <div class="section-heading"><div><p class="eyebrow">TEDAVİ ALANLARIMIZ</p><h2>İyi hissettiren<br><span class="accent">diş hekimliği.</span></h2></div><p>Güncel tedavi yöntemlerini, sizi merkeze alan bir iletişimle bir araya getiriyoruz.</p></div>
-                <div class="treatment-grid">
-                    <article class="treatment-card treatment-card--featured" data-reveal><span class="card-number">01</span><i class="fa-solid fa-tooth"></i><h3>İmplant Tedavileri</h3><p>Eksik dişlerin fonksiyon ve estetiğini uzun ömürlü çözümlerle yeniden kazandırıyoruz.</p><a href="tedavi.html?tedavi=dental-implant">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
-                    <article class="treatment-card" data-reveal><span class="card-number">02</span><i class="fa-regular fa-face-smile"></i><h3>Estetik Gülüş Tasarımı</h3><p>Yüzünüze, karakterinize ve beklentilerinize uyumlu doğal gülüşler planlıyoruz.</p><a href="tedavi.html?tedavi=gulus-tasarimi">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
-                    <article class="treatment-card" data-reveal><span class="card-number">03</span><i class="fa-solid fa-align-center"></i><h3>Ortodonti</h3><p>Şeffaf plak ve modern ortodontik yaklaşımlarla dengeli diş dizilimi hedefliyoruz.</p><a href="tedavi.html?tedavi=seffaf-plak">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
-                    <article class="treatment-card" data-reveal><span class="card-number">04</span><i class="fa-solid fa-microscope"></i><h3>Endodonti</h3><p>Dişinizi korumaya odaklanan, büyütme destekli hassas kanal tedavileri sunuyoruz.</p><a href="tedavi.html?tedavi=kanal-tedavisi">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
-                    <article class="treatment-card treatment-card--quote" data-reveal><p>“Sağlıklı bir gülüş, iyi bir yaşamın en doğal parçasıdır.”</p><span>KAYA ALP KLİNİK FELSEFESİ</span></article>
+                <div class="treatment-grid" aria-label="Tedavi alanları">
+                    <details class="treatment-row" data-reveal>
+                        <summary><span class="treatment-row__number">01</span><i class="treatment-row__icon fa-solid fa-tooth" aria-hidden="true"></i><h3>İmplant Tedavileri</h3><span class="treatment-row__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span></summary>
+                        <div class="treatment-row__panel"><div class="treatment-row__content"><p>Eksik dişlerin fonksiyon ve estetiğini uzun ömürlü çözümlerle yeniden kazandırıyoruz.</p><a href="tedavi.html?tedavi=dental-implant">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                    </details>
+                    <details class="treatment-row" data-reveal>
+                        <summary><span class="treatment-row__number">02</span><i class="treatment-row__icon fa-regular fa-face-smile" aria-hidden="true"></i><h3>Estetik Gülüş Tasarımı</h3><span class="treatment-row__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span></summary>
+                        <div class="treatment-row__panel"><div class="treatment-row__content"><p>Yüzünüze, karakterinize ve beklentilerinize uyumlu doğal gülüşler planlıyoruz.</p><a href="tedavi.html?tedavi=gulus-tasarimi">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                    </details>
+                    <details class="treatment-row" data-reveal>
+                        <summary><span class="treatment-row__number">03</span><i class="treatment-row__icon fa-solid fa-align-center" aria-hidden="true"></i><h3>Ortodonti</h3><span class="treatment-row__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span></summary>
+                        <div class="treatment-row__panel"><div class="treatment-row__content"><p>Şeffaf plak ve modern ortodontik yaklaşımlarla dengeli diş dizilimi hedefliyoruz.</p><a href="tedavi.html?tedavi=seffaf-plak">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                    </details>
+                    <details class="treatment-row" data-reveal>
+                        <summary><span class="treatment-row__number">04</span><i class="treatment-row__icon fa-solid fa-microscope" aria-hidden="true"></i><h3>Endodonti</h3><span class="treatment-row__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span></summary>
+                        <div class="treatment-row__panel"><div class="treatment-row__content"><p>Dişinizi korumaya odaklanan, büyütme destekli hassas kanal tedavileri sunuyoruz.</p><a href="tedavi.html?tedavi=kanal-tedavisi">Tedavi bilgileri <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                    </details>
                 </div>
+                <p class="treatment-note" data-reveal>“Sağlıklı bir gülüş, iyi bir yaşamın en doğal parçasıdır.” <span>Kaya Alp klinik felsefesi</span></p>
             </div>
         </section>
 
         <section class="section why-us" id="why-us">
             <div class="shell why-layout">
-                <div class="why-visual" data-reveal><div class="why-visual__line"></div><div class="why-visual__circle"><span>ÖZEN</span><span>GÜVEN</span><span>BİLİM</span><span>KONFOR</span></div><p>Her aşamada<br><b>şeffaf iletişim.</b></p></div>
+                <div class="why-visual" data-reveal><img class="why-visual__image" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Modern diş kliniğinde uygulama alanı" loading="lazy"><div class="why-visual__line"></div><div class="why-visual__circle"><span>ÖZEN</span><span>GÜVEN</span><span>BİLİM</span><span>KONFOR</span></div><p>Her aşamada<br><b>şeffaf iletişim.</b></p></div>
                 <div class="why-content" data-reveal><p class="eyebrow">NEDEN KAYA ALP?</p><h2>Size anlatan, sizi dinleyen ve yanınızda kalan bir ekip.</h2><div class="feature-list"><article><span>01</span><div><h3>Kişiye özel planlama</h3><p>Tedavi kararlarını ihtiyaçlarınıza, klinik durumunuza ve beklentilerinize göre birlikte oluştururuz.</p></div></article><article><span>02</span><div><h3>Güncel klinik altyapı</h3><p>Dijital ölçüden tanı teknolojilerine kadar süreçleri daha öngörülebilir hale getiririz.</p></div></article><article><span>03</span><div><h3>Sakin ve özenli deneyim</h3><p>Her adımı anlaşılır biçimde paylaşır; kendinizi güvende hissetmenizi önemseriz.</p></div></article></div></div>
             </div>
         </section>
 
         <section class="section doctors" id="doctors">
             <div class="shell"><div class="section-heading section-heading--compact"><div><p class="eyebrow">HEKİMLERİMİZ</p><h2>Uzmanlık, güven ve<br><span class="accent">ortak bir vizyon.</span></h2></div><a class="button button--outline" href="hekimlerimiz.html">Ekibimizle tanışın <i class="fa-solid fa-arrow-right"></i></a></div>
-                <div class="doctor-grid"><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--one"><span>EK</span></div><div><p>ESTETİK DİŞ HEKİMLİĞİ</p><h3>Dr. Ecem Kaya</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--two"><span>MA</span></div><div><p>İMPLANTOLOJİ &amp; CERRAHİ</p><h3>Dr. Mert Alp</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--three"><span>SA</span></div><div><p>ORTODONTİ &amp; PEDODONTİ</p><h3>Dr. Selin Arda</h3><a href="#appointment">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article></div>
+                <div class="doctor-grid"><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--one"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Temsili kadın diş hekimi portresi" loading="lazy"></div><div><p>ESTETİK DİŞ HEKİMLİĞİ</p><h3>Dr. Ecem Kaya</h3><a href="doktor.html?hekim=ecem-kaya">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--two"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Temsili erkek diş hekimi portresi" loading="lazy"></div><div><p>İMPLANTOLOJİ &amp; CERRAHİ</p><h3>Dr. Mert Alp</h3><a href="doktor.html?hekim=mert-alp">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--three"><img src="https://images.pexels.com/photos/5214958/pexels-photo-5214958.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Temsili kadın diş hekimi portresi" loading="lazy"></div><div><p>ORTODONTİ &amp; PEDODONTİ</p><h3>Dr. Selin Arda</h3><a href="doktor.html?hekim=selin-arda">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article></div>
             </div>
         </section>
 
@@ -166,6 +179,6 @@
 
     <footer class="site-footer"><div class="shell footer-main"><div><a class="footer-brand" href="#home"><img src="https://media.nevasiteyonetimi.com/kayaalpdis/logo.png" alt="Kaya Alp"></a><p>Bilimsel, etik ve insani yaklaşımı bir araya getiren çağdaş diş hekimliği deneyimi.</p></div><div><p>KEŞFET</p><a href="#about">Kurumsal</a><a href="#treatments">Tedavilerimiz</a><a href="#doctors">Hekimlerimiz</a></div><div><p>İLETİŞİM</p><a href="tel:+902824400287">(0282) 440 02 87</a><a href="#appointment">Randevu Talebi</a><a href="#contact">Süleymanpaşa / Tekirdağ</a></div><div class="footer-social"><p>BİZİ TAKİP EDİN</p><a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#contact" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div></div><div class="shell footer-bottom"><span>© 2026 Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span><div><a href="#contact">KVKK</a><a href="#contact">Çerez Politikası</a></div></div></footer>
 
-    <script src="sscriptt.js?v=20260811-kayaalp-v1" defer></script>
+    <script src="sscriptt.js?v=20260818-doctor-v7" defer></script>
 </body>
 </html>
