@@ -199,3 +199,15 @@ body.home-preview .hero-copy{filter:drop-shadow(0 3px 13px rgba(25,53,93,.36))}
 /* Arka planda tek görsel kullanılır; tekrar eden doku ve dekoratif halka kaldırılır. */
 .treatment-detail-hero{background-repeat:no-repeat;background-size:cover;background-attachment:scroll}
 .treatment-detail-hero:after{display:none}
+
+/* Tedavi hero alanı sabit marka tasarımıdır; tedavi görseli altındaki ayrı alanda gösterilir. */
+.treatment-detail-hero{background:radial-gradient(circle at 78% 24%,rgba(24,188,180,.24),transparent 25%),linear-gradient(132deg,var(--navy-deep) 0%,var(--navy) 68%,#1D948D 145%)}
+.treatment-detail-hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.16),transparent 66%);z-index:0}
+.treatment-detail-hero .shell{z-index:1}
+.treatment-feature-image{padding:66px 0 0;background:var(--paper)}
+.treatment-feature-image figure{width:min(100%,880px);margin:0 auto;overflow:hidden;background:var(--white);border:1px solid var(--line);box-shadow:18px 20px 0 rgba(24,188,180,.12)}
+.treatment-feature-image img{display:block;width:100%;height:auto;max-height:690px;object-fit:contain;background:var(--white)}
+@media(min-width:1101px){.treatment-detail-hero{height:540px;min-height:540px;padding:0;align-items:center}}
+@media(max-width:1100px) and (min-width:901px){.treatment-detail-hero{height:510px;min-height:510px;padding:0;align-items:center}}
+@media(max-width:900px){.treatment-detail-hero{height:500px;min-height:500px;padding:0;align-items:center}.treatment-feature-image{padding-top:48px}.treatment-feature-image figure{width:min(100%,720px)}}
+@media(max-width:620px){.treatment-detail-hero{height:455px;min-height:455px;padding:0}.treatment-feature-image{padding-top:34px}.treatment-feature-image figure{width:100%;box-shadow:9px 11px 0 rgba(24,188,180,.12)}}
