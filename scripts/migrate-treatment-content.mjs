@@ -44,6 +44,14 @@ const extractContent = page => {
   const contentStart = (articleStart === -1 ? 0 : articleStart) + match.index;
   const rawContent = getElementInnerHtml(page, contentStart, match[1]);
   return rawContent
+    .replace(/<div\b[^>]*>(?:(?!<\/?div\b)[\s\S])*?Makaleyi\s+Yazan\s+Hekim(?:(?!<\/?div\b)[\s\S])*?<\/div>/gi, '')
+    .replace(/<p\b[^>]*>(?:(?!<\/?p\b)[\s\S])*?Makaleyi\s+Yazan\s+Hekim(?:(?!<\/?p\b)[\s\S])*?<\/p>/gi, '')
+    .replace(/Trakya\s*Dent\s*Trakyadent\s+Ağız ve Diş Sağlığı kliniklerine/gi, 'kliniğimize')
+    .replace(/Trakyadent\s+Ağız ve Diş Sağlığı kliniklerinin/gi, 'kliniğimizin')
+    .replace(/Trakyadent\s+Ağız ve Diş Sağlığı kliniklerinde/gi, 'kliniğimizde')
+    .replace(/Trakyadent(?:['’]de|['’]te)/gi, 'Kliniğimizde')
+    .replace(/Trakyadent/gi, 'Kliniğimiz')
+    .replace(/(?:(?:Uzm\.|Prof\.|Doç\.|Dr\.|Dt\.)\s*)+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü]+(?:\s+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü]+){0,4}(?=\s|<|$)/g, '')
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/<(script|style|noscript|iframe|form|svg|button)[^>]*>[\s\S]*?<\/\1>/gi, '')
     .replace(/<\/?(input|select|option|textarea|img|source|picture|video|audio|canvas)[^>]*>/gi, '')
