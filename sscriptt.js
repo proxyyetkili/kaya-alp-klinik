@@ -58,14 +58,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const profileLink = card.querySelector('a[href^="doktor.html?hekim="]');
         if (!profileLink) return;
         const profileHref = profileLink.getAttribute('href');
+        const profileAction = document.createElement('span');
+        profileAction.className = 'doctor-card__profile';
+        profileAction.innerHTML = profileLink.innerHTML;
+        profileLink.replaceWith(profileAction);
         card.setAttribute('role', 'link');
         card.tabIndex = 0;
+        card.setAttribute('aria-label', `${card.querySelector('h3')?.textContent.trim() || 'Hekim'} profilini inceleyin`);
         card.addEventListener('click', event => {
-            if (event.target.closest('a, button')) return;
+            if (event.target.closest('button')) return;
             location.href = profileHref;
         });
         card.addEventListener('keydown', event => {
-            if (event.target.closest('a, button') || (event.key !== 'Enter' && event.key !== ' ')) return;
+            if (event.target.closest('button') || (event.key !== 'Enter' && event.key !== ' ')) return;
             event.preventDefault();
             location.href = profileHref;
         });
