@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const source = Object.entries(homeDoctorPhotos).find(([className]) => photo.classList.contains(className))?.[1];
         if (source) photo.insertAdjacentHTML('afterbegin', `<img src="${source[0]}" alt="${source[1]}" loading="lazy">`);
     });
+    const doctorsPageGrid = document.querySelector('.doctors-page-grid');
+    if (doctorsPageGrid) {
+        const doctorsPageIntro = doctorsPageGrid.previousElementSibling;
+        if (doctorsPageIntro?.classList.contains('page-intro')) {
+            doctorsPageIntro.innerHTML = '<p class="eyebrow">HEKİMLERİMİZ</p><h2>Uzmanlık, güven ve<br><span class="accent">ortak bir vizyon.</span></h2>';
+        }
+        doctorsPageGrid.className = 'doctor-grid doctors-page-grid';
+        doctorsPageGrid.innerHTML = `<article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--one"><img src="${homeDoctorPhotos['doctor-photo--one'][0]}" alt="${homeDoctorPhotos['doctor-photo--one'][1]}" loading="lazy"></div><div><p>ESTETİK DİŞ HEKİMLİĞİ</p><h3>Dr. Ecem Kaya</h3><a href="doktor.html?hekim=ecem-kaya">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--two"><img src="${homeDoctorPhotos['doctor-photo--two'][0]}" alt="${homeDoctorPhotos['doctor-photo--two'][1]}" loading="lazy"></div><div><p>İMPLANTOLOJİ &amp; CERRAHİ</p><h3>Dr. Mert Alp</h3><a href="doktor.html?hekim=mert-alp">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--three"><img src="${homeDoctorPhotos['doctor-photo--three'][0]}" alt="${homeDoctorPhotos['doctor-photo--three'][1]}" loading="lazy"></div><div><p>ORTODONTİ &amp; PEDODONTİ</p><h3>Dr. Selin Arda</h3><a href="doktor.html?hekim=selin-arda">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>`;
+    }
     const menuButton = document.getElementById('menuButton');
     const menuClose = document.getElementById('menuClose');
     const syncAnchorOffset = () => document.documentElement.style.setProperty('--header-offset', `${(header?.offsetHeight || 72) + 22}px`);
