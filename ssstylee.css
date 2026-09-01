@@ -195,3 +195,7 @@ body.home-preview .hero-copy{filter:drop-shadow(0 3px 13px rgba(25,53,93,.36))}
 @media(max-width:1100px) and (min-width:901px){.treatment-detail-hero{height:720px;min-height:720px;padding:0 0 60px}}
 @media(max-width:900px){.treatment-detail-hero{height:660px;min-height:660px;padding:0 0 58px;display:flex;align-items:flex-end}.treatment-detail-hero .shell{width:100%}}
 @media(max-width:620px){.treatment-detail-hero{height:600px;min-height:600px;padding-bottom:46px}.treatment-detail-hero h1{font-size:clamp(40px,11vw,54px)}}
+
+/* Arka planda tek görsel kullanılır; tekrar eden doku ve dekoratif halka kaldırılır. */
+.treatment-detail-hero{background-repeat:no-repeat;background-size:cover;background-attachment:scroll}
+.treatment-detail-hero:after{display:none}
