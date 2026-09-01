@@ -207,6 +207,19 @@ body.home-preview .hero-copy{filter:drop-shadow(0 3px 13px rgba(25,53,93,.36))}
 .treatment-feature-image{padding:66px 0 0;background:var(--paper)}
 .treatment-feature-image figure{width:min(100%,880px);margin:0 auto;overflow:hidden;background:var(--white);border:1px solid var(--line);box-shadow:18px 20px 0 rgba(24,188,180,.12)}
 .treatment-feature-image img{display:block;width:100%;height:auto;max-height:690px;object-fit:contain;background:var(--white)}
+.treatment-source-copy{padding:92px 0 112px;background:var(--paper)}
+.treatment-source-copy article{max-width:880px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.9}
+.treatment-source-copy h2{margin:62px 0 18px;color:var(--navy);font-family:var(--font-display);font-size:clamp(30px,3.8vw,49px);font-weight:600;line-height:1.1;letter-spacing:-.045em}
+.treatment-source-copy h2:first-child{margin-top:0}
+.treatment-source-copy h3{margin:38px 0 14px;color:var(--navy);font-family:var(--font-display);font-size:clamp(22px,2.7vw,32px);font-weight:600;line-height:1.2;letter-spacing:-.035em}
+.treatment-source-copy p{margin:0 0 20px}
+.treatment-source-copy ul,.treatment-source-copy ol{margin:0 0 24px;padding-left:24px}
+.treatment-source-copy li{margin-bottom:9px}
+.treatment-source-copy strong{color:var(--navy)}
+.treatment-source-copy table{width:100%;margin:30px 0;border-collapse:collapse;font-size:.94em}
+.treatment-source-copy td,.treatment-source-copy th{padding:13px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.treatment-source-copy .wp-block-table{overflow-x:auto}
+@media(max-width:620px){.treatment-source-copy{padding:58px 0 74px}.treatment-source-copy article{font-size:15px;line-height:1.8}.treatment-source-copy h2{margin-top:45px}.treatment-source-copy h3{margin-top:31px}}
 @media(min-width:1101px){.treatment-detail-hero{height:540px;min-height:540px;padding:0;align-items:center}}
 @media(max-width:1100px) and (min-width:901px){.treatment-detail-hero{height:510px;min-height:510px;padding:0;align-items:center}}
 @media(max-width:900px){.treatment-detail-hero{height:500px;min-height:500px;padding:0;align-items:center}.treatment-feature-image{padding-top:48px}.treatment-feature-image figure{width:min(100%,720px)}}
