@@ -54,6 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
         doctorsPageGrid.className = 'doctor-grid doctors-page-grid';
         doctorsPageGrid.innerHTML = `<article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--one"><img src="${homeDoctorPhotos['doctor-photo--one'][0]}" alt="${homeDoctorPhotos['doctor-photo--one'][1]}" loading="lazy"></div><div><p>ESTETİK DİŞ HEKİMLİĞİ</p><h3>Dr. Ecem Kaya</h3><a href="doktor.html?hekim=ecem-kaya">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--two"><img src="${homeDoctorPhotos['doctor-photo--two'][0]}" alt="${homeDoctorPhotos['doctor-photo--two'][1]}" loading="lazy"></div><div><p>İMPLANTOLOJİ &amp; CERRAHİ</p><h3>Dr. Mert Alp</h3><a href="doktor.html?hekim=mert-alp">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article><article class="doctor-card" data-reveal><div class="doctor-photo doctor-photo--three"><img src="${homeDoctorPhotos['doctor-photo--three'][0]}" alt="${homeDoctorPhotos['doctor-photo--three'][1]}" loading="lazy"></div><div><p>ORTODONTİ &amp; PEDODONTİ</p><h3>Dr. Selin Arda</h3><a href="doktor.html?hekim=selin-arda">Profil <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>`;
     }
+    document.querySelectorAll('.doctor-card').forEach(card => {
+        const profileLink = card.querySelector('a[href^="doktor.html?hekim="]');
+        if (!profileLink) return;
+        const profileHref = profileLink.getAttribute('href');
+        card.setAttribute('role', 'link');
+        card.tabIndex = 0;
+        card.addEventListener('click', event => {
+            if (event.target.closest('a, button')) return;
+            location.href = profileHref;
+        });
+        card.addEventListener('keydown', event => {
+            if (event.target.closest('a, button') || (event.key !== 'Enter' && event.key !== ' ')) return;
+            event.preventDefault();
+            location.href = profileHref;
+        });
+    });
     const menuButton = document.getElementById('menuButton');
     const menuClose = document.getElementById('menuClose');
     const syncAnchorOffset = () => document.documentElement.style.setProperty('--header-offset', `${(header?.offsetHeight || 72) + 22}px`);
