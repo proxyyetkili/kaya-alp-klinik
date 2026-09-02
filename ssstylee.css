@@ -230,3 +230,9 @@ body.home-preview .hero-copy .eyebrow--light{color:#e7fffb;text-shadow:0 2px 8px
 @media(max-width:1100px) and (min-width:901px){.treatment-detail-hero{height:510px;min-height:510px;padding:0;align-items:center}}
 @media(max-width:900px){.treatment-detail-hero{height:500px;min-height:500px;padding:0;align-items:center}.treatment-feature-image{padding-top:48px}.treatment-feature-image figure{width:min(100%,720px)}}
 @media(max-width:620px){.treatment-detail-hero{height:455px;min-height:455px;padding:0}.treatment-feature-image{padding-top:34px}.treatment-feature-image figure{width:100%;box-shadow:9px 11px 0 rgba(24,188,180,.12)}}
+
+/* Marka şeridi iki aynı akıştan oluşur; yarı noktadaki geçiş görünmezdir. */
+.source-brand-marquee>.source-brand-marquee__track{display:flex;width:max-content;gap:0;will-change:transform;animation:source-marquee 30s linear infinite}
+.source-brand-marquee__group{display:flex;flex:none;gap:42px;padding-right:42px}
+@keyframes source-marquee{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.source-brand-marquee>.source-brand-marquee__track{animation:none}}
